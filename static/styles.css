@@ -1,0 +1,232 @@
+/* Catppuccin Latte */
+:root,
+body[data-theme="light"] {
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
+  --text: #4c4f69;
+  --subtext-1: #5c5f77;
+  --subtext-0: #6c6f85;
+  --overlay-2: #7c7f93;
+  --overlay-1: #8c8fa1;
+  --overlay-0: #9ca0b0;
+  --surface-2: #acb0be;
+  --surface-1: #bcc0cc;
+  --surface-0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
+}
+
+/* Catppuccin Mocha */
+body[data-theme="dark"] {
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --subtext-1: #bac2de;
+  --subtext-0: #a6adc8;
+  --overlay-2: #9399b2;
+  --overlay-1: #7f849c;
+  --overlay-0: #6c7086;
+  --surface-2: #585b70;
+  --surface-1: #45475a;
+  --surface-0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+}
+
+.fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-mono-medium {
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-mono-bold {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: var(--base);
+  color: var(--text);
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  position: relative;
+  float: right;
+  background-color: var(--base);
+  color: var(--text);
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: var(--text);
+}
+
+h1:before {
+  content: "◈ ";
+  color: var(--red);
+  font-size: 3rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--subtext-1);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h2:before {
+  content: "❖ ";
+  color: var(--peach);
+}
+
+h3:before {
+  content: "◇ ";
+  color: var(--yellow);
+}
+
+h4:before {
+  content: "⁕ ";
+  color: var(--green);
+}
+
+h5:before {
+  content: "⌾ ";
+  color: var(--blue);
+}
+
+h6:before {
+  content: "○ ";
+  color: var(--lavender);
+}
+
+a {
+  transition-duration: 500ms;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  transition-duration: 500ms;
+  color: var(--sky);
+  text-decoration: none;
+}
+
+ul li::marker {
+  content: "- ";
+  color: var(--rosewater);
+}
+
+ol li::marker {
+  color: var(--rosewater);
+}
+
+blockquote {
+  margin: 0 0 0 1.25rem;
+  padding: 0 0 0 0.5rem;
+  border-inline-start: 0.375rem solid var(--sapphire);
+  color: var(--subtext-1);
+  font-style: italic;
+}
+
+::selection,
+::-moz-selection {
+  color: var(--text);
+  background: var(--overlay-2);
+  opacity: 20%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: var(--mauve);
+}
+
+button p {
+  transition-duration: 500ms;
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+button p:hover {
+  transition-duration: 500ms;
+  color: var(--pink);
+}
+
+/* button themeToggle { */
+/*   color: var(--blue); */
+/*   text-decoration: none; */
+/* } */
+/**/
+/* themeToggle:hover { */
+/*   transition-duration: 500ms; */
+/*   color: var(--sky); */
+/*   text-decoration: none; */
+/* } */
